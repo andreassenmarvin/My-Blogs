@@ -1,0 +1,15 @@
+{{#partial "content"}}
+
+    <h1>Post list!</h1>
+
+    <p>Add a new Post:</p>
+
+    <form action="/posts/new" method="POST">
+        <label for="content">Post Description</label>
+        <input id="content" name="content" type="text">
+
+        <button type="submit" class="btn btn-default">Add post</button>
+    </form>
+{{/partial}}
+
+{{> layout.hbs}}
