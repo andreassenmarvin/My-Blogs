@@ -1,0 +1,66 @@
+ /* nav links */
+ .navbar-toggler {
+   outline: none !important;
+ }
+ .toggler-icon {
+   font-size: 2.5rem;
+   color: var(--mainPink);
+ }
+ .nav-link {
+   color: var(--mainPink);
+   font-size: 1.5rem;
+   transition: all 0.5s ease-in-out;
+ }
+ .nav-link:hover {
+   color: var(--mainBlack);
+ }
+ /* end of nav links */
+ /* info icons */
+ .cart-info__icon {
+   color: var(--mainBlack);
+   cursor: pointer;
+ }
+
+ .cart-info {
+   border: 0.1rem solid var(--mainBlack);
+   color: var(--mainBlack);
+   border-radius: 0.25rem;
+   padding: 0.4rem 0.6rem;
+   cursor: pointer;
+ }
+ .cart-info:hover {
+   background: var(--mainPink);
+   border-color: var(--mainPink);
+   color: var(--mainWhite);
+ }
+ .cart-info:hover .cart-info__icon {
+   color: var(--mainWhite);
+ }
+
+ /* end of info icons */
+ /* banner */
+
+ .max-height {
+   min-height: calc(100vh - 76px);
+   background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+     url("../img/headerBcg.jpeg") center/cover fixed no-repeat;
+   position: relative;
+ }
+ .banner {
+   color: var(--mainWhite);
+   margin-top: -4rem;
+ }
+ .banner-title {
+   color: var(--mainPink);
+   font-size: 4rem;
+ }
+ .banner-link {
+   font-size: 1.5rem;
+   color: var(--mainBlack);
+   border: 0.2rem solid var(--mainBlack);
+ }
+ .banner-link:hover {
+   background: var(--mainBlack);
+   color: var(--mainPink);
+ }
+ /* endo of banner */
