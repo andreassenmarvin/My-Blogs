@@ -27,7 +27,8 @@ public class App {
         post("/posts/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             String content = request.queryParams("content");
-            Post newPost = new Post(content);
+            String username = request.queryParams("username");
+            Post newPost = new Post(content, username);
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
 
