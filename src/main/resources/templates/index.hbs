@@ -155,10 +155,10 @@
     {{#if posts}} <!--if posts exist, then -->
     {{#each posts }} <!--loop-->
     <div class="card">
-    <h2 class="card-title">Current post</h2>
+    <h2 class="card-title" style="font-size: 20px">Current blog</h2>
         <div class="card-body">
-           <p>{{ content }}</p> <!--show-->
-           <p>Created by: {{ username }}</p>
+           <p style="font-size: 16px">{{ content }}</p> <!--show-->
+           <p style="font-size: 13px">Created by: {{ username }}</p>
         </div>
     </div>
     {{/each}}
@@ -174,6 +174,9 @@
         <div class="form-group">
         <label for="content" style="color: pink">Input blog *</label>
         <input class="form-control" id="content" name="content" type="text" style="width: 300px; display: block; margin: auto">
+        </div>>
+        <div class="form-group">
+        <label for="content" style="color: pink">Input username *</label>
         <input class="form-control" id="content" name="username" type="text" style="width: 300px; display: block; margin: auto">
         </div>
 
