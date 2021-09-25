@@ -4,6 +4,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.text.ParseException;
+
 import static org.junit.Assert.*;
 
 public class PostTest {
@@ -14,16 +16,16 @@ public class PostTest {
     }
 
     @Test
-    public void AllPostsAreCorrectlyReturned_true() {
-        Post post = new Post("Day 1: Intro");
-        Post otherPost = new Post ("How to pair successfully");
+    public void AllPostsAreCorrectlyReturned_true() throws ParseException {
+        Post post = new Post("Day 1: Intro", "");
+        Post otherPost = new Post ("How to pair successfully", "");
         assertEquals(2, Post.getAll().size());
     }
 
     @Test
-    public void AllPostsContainsAllPosts_true() {
-        Post post = new Post("Day 1: Intro");
-        Post otherPost = new Post ("How to pair successfully");
+    public void AllPostsContainsAllPosts_true() throws ParseException {
+        Post post = new Post("Day 1: Intro", "");
+        Post otherPost = new Post ("How to pair successfully", "");
         assertTrue(Post.getAll().contains(post));
         assertTrue(Post.getAll().contains(otherPost));
     }
