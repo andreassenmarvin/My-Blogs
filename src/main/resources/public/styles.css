@@ -1,66 +1,63 @@
- /* nav links */
+ body {
+   overflow-x: hidden;
+ }
+
+ /* background */
+ .theme {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #388d80;
+    z-index: -999;
+    overflow: visible
+ }
+
+ /* overlay */
+
+ .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(44, 43, 43, 0.6);
+    z-index: 2;
+ }
+
+ /* nav bar */
+ .navbar {
+    z-index: 3;
+ }
+
+ #nav-brand {
+   width: 40px;
+ }
+
  .navbar-toggler {
    outline: none !important;
  }
  .toggler-icon {
    font-size: 2.5rem;
-   color: var(--mainPink);
+   color: white;
  }
  .nav-link {
-   color: var(--mainPink);
-   font-size: 1.5rem;
-   transition: all 0.5s ease-in-out;
+   color: pink;
+   font-size: 1rem;
+   margin: 0 40px 0 40px;
+   transition: all 0.3s ease-in-out;
  }
  .nav-link:hover {
-   color: var(--mainBlack);
- }
- /* end of nav links */
- /* info icons */
- .cart-info__icon {
-   color: var(--mainBlack);
-   cursor: pointer;
+   color: white;
  }
 
- .cart-info {
-   border: 0.1rem solid var(--mainBlack);
-   color: var(--mainBlack);
-   border-radius: 0.25rem;
-   padding: 0.4rem 0.6rem;
-   cursor: pointer;
- }
- .cart-info:hover {
-   background: var(--mainPink);
-   border-color: var(--mainPink);
-   color: var(--mainWhite);
- }
- .cart-info:hover .cart-info__icon {
-   color: var(--mainWhite);
- }
-
- /* end of info icons */
- /* banner */
-
- .max-height {
-   min-height: calc(100vh - 76px);
-   background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
-     url("../img/headerBcg.jpeg") center/cover fixed no-repeat;
+ /* blogs */
+ .blogs {
    position: relative;
+   z-index: 3;
+   margin-top: 50px;
  }
- .banner {
-   color: var(--mainWhite);
-   margin-top: -4rem;
+
+ .blogs-form {
+   position: relative;
+   text-align: center;
+   z-index: 3;
+   margin-top: 100px;
  }
- .banner-title {
-   color: var(--mainPink);
-   font-size: 4rem;
- }
- .banner-link {
-   font-size: 1.5rem;
-   color: var(--mainBlack);
-   border: 0.2rem solid var(--mainBlack);
- }
- .banner-link:hover {
-   background: var(--mainBlack);
-   color: var(--mainPink);
- }
- /* endo of banner */
