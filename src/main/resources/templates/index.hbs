@@ -130,7 +130,7 @@
       <div class="collapse navbar-collapse" id="myNav">
         <ul class="navbar-nav mx-auto text-capitalize">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#content">Create blogs</a>
@@ -168,19 +168,14 @@
     </div>
 
     <div class="blogs-form">
-    <p style="color: white">Add a new blog:</p>
+    <p style="color: black">Add a new blog:</p>
 
     <form action="/posts/new" method="post">
-        <div class="form-group">
-        <label for="content" style="color: pink">Input blog *</label>
-        <input class="form-control" id="content" name="content" type="text" style="width: 300px; display: block; margin: auto">
-        </div>>
-        <div class="form-group">
-        <label for="content" style="color: pink">Input username *</label>
-        <input class="form-control" id="content" name="username" type="text" style="width: 300px; display: block; margin: auto">
-        </div>
-
-        <button type="submit" class="btn btn-default btn-sm">Add blog</button>
+        <input class="form-control" id="content" name="content" type="text" placeholder="Input blog..." style="width: 300px; display: block; margin: auto; padding: 10px">
+        <br/>
+        <input class="form-control" id="content" name="username" type="text" placeholder="Input username..." style="width: 300px; display: block; margin: auto; padding: 10px">
+        <br/>
+        <button type="submit" class="btn btn-default btn-sm">Add</button>
     </form>
     </div>
 {{/partial}}

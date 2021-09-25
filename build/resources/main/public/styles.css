@@ -57,6 +57,11 @@
 
  .blogs-form {
    position: relative;
+   display: block;
+   margin: auto;
+   background: pink;
+   width: 400px;
+   padding: 20px;
    text-align: center;
    z-index: 3;
    margin-top: 100px;
