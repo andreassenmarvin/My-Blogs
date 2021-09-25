@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="models.PostTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-09-25T23:03:44" hostname="marvinandreassen" time="0.004">
+<testsuite name="models.PostTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-09-25T23:45:50" hostname="marvinandreassen" time="0.004">
   <properties/>
   <testcase name="AllPostsAreCorrectlyReturned_true" classname="models.PostTest" time="0.003"/>
   <testcase name="AllPostsContainsAllPosts_true" classname="models.PostTest" time="0.0"/>
