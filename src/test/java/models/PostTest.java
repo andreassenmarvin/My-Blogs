@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import java.text.ParseException;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 import static org.junit.Assert.*;
 
@@ -34,6 +35,6 @@ public class PostTest {
     @Test
     public void getCreatedAt_instantiatesWithCurrentTime_today() throws Exception{
         Post post = new Post("Day 1: Intro", ""); //see below
-        assertEquals(LocalDateTime.now().getDayOfWeek(), post.getCreatedAt().getDayOfWeek());
+        assertEquals(new Date(), post.getCreatedAt());
     }
 }
