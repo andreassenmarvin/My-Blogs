@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="models.PostTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-09-26T00:19:40" hostname="marvinandreassen" time="0.003">
+<testsuite name="models.PostTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-09-26T08:09:30" hostname="marvinandreassen" time="0.037">
   <properties/>
-  <testcase name="AllPostsAreCorrectlyReturned_true" classname="models.PostTest" time="0.003"/>
+  <testcase name="getCreatedAt_instantiatesWithCurrentTime_today" classname="models.PostTest" time="0.036"/>
+  <testcase name="AllPostsAreCorrectlyReturned_true" classname="models.PostTest" time="0.0"/>
   <testcase name="AllPostsContainsAllPosts_true" classname="models.PostTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

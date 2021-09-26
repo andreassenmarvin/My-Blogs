@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.text.ParseException;
+import java.time.LocalDateTime;
 
 import static org.junit.Assert.*;
 
@@ -28,5 +29,11 @@ public class PostTest {
         Post otherPost = new Post ("How to pair successfully", "");
         assertTrue(Post.getAll().contains(post));
         assertTrue(Post.getAll().contains(otherPost));
+    }
+
+    @Test
+    public void getCreatedAt_instantiatesWithCurrentTime_today() throws Exception{
+        Post post = new Post("Day 1: Intro", ""); //see below
+        assertEquals(LocalDateTime.now().getDayOfWeek(), post.getCreatedAt().getDayOfWeek());
     }
 }
